@@ -1,5 +1,4 @@
-const _access_key =
-  "ODQ0OTIwODM5MTU3NDQ4NzE0.YKZb2Q.wyXIsI5Q798OCsyg0z5-J8Qtpbs";
+require("dotenv").config();
 
 // Extract the required classes from the discord.js module
 const { Client, Attachment } = require("discord.js");
@@ -22,4 +21,4 @@ client.on("message", (msg) => {
   }
 });
 
-client.login(_access_key);
+client.login(process.env.access_key);
